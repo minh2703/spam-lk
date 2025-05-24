@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Telegram: @minhkenx88
+# Version: 1.0.6 (Fixed)
+# Copyright by WsThanhDieu
+# Description: zLocket Tool Open Source
+
 import sys
 import os
 import struct
@@ -9,7 +16,12 @@ def detect_debug():
         print("[!] Debugger detected (sys.gettrace)")
         sys.exit(1)
 
-    # Method 2: Check for suspicious environment indicators (fallback for psutil)
+    # Bỏ qua kiểm tra nếu đang chạy trong CI hoặc GitHub Actions
+    if os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true":
+        print("[*] CI environment detected – skipping debug checks.")
+        return
+
+    # Method 2: Check for suspicious environment indicators
     suspicious_env = ['PYCHARM_HOSTED', 'TERM_PROGRAM', 'VSCODE_PID']
     for key in suspicious_env:
         if key in os.environ:
