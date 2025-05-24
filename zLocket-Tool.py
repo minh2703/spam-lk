@@ -1,11 +1,3 @@
-# ==================================
-#!/usr/bin/env python
-# coding: utf-8
-# Telegram: @minhkenx88
-# Version: 1.0.6 (Fixed)
-# Copyright WsThanhDieu
-# Description: zLocket Tool Open Source
-# ==================================
 import sys
 import os
 import struct
