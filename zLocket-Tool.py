@@ -1,3 +1,11 @@
+# ==================================
+#!/usr/bin/env python
+# coding: utf-8
+# Telegram: @minhkenx88
+# Version: 1.0.6 (Fixed)
+# Copyright by WsThanhDieu
+# Description: zLocket Tool Open Source
+# ==================================
 import sys
 import os
 import struct
@@ -8,13 +16,6 @@ def detect_debug():
     if sys.gettrace():
         print("[!] Debugger detected (sys.gettrace)")
         sys.exit(1)
-
-    # Method 2: Check for suspicious environment indicators (fallback for psutil)
-    suspicious_env = ['PYCHARM_HOSTED', 'TERM_PROGRAM', 'VSCODE_PID']
-    for key in suspicious_env:
-        if key in os.environ:
-            print(f"[!] Suspicious environment detected: {key}")
-            sys.exit(1)
 
 # --- Clean and run patched .pyc ---
 def run_patched_pyc(pyc_path):
