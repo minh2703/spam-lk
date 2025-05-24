@@ -1,4 +1,4 @@
 @echo off
-@REM autopep8 --in-place zLocket-Tool.py
+cd /d "%~dp0"
 python zLocket-Tool.py
 pause
