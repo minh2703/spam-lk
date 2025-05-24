@@ -13,5 +13,3 @@ Website: api.thanhdieu.com
 Không nên treo tool, vì proxy xoay sẽ không thể tái tạo lại, nếu thấy spam chậm dần đi thì hãy đóng tool mở lại
 
 Spam nhanh hay chậm tuỳ vào proxy khoẻ (timeout, ping thấp), nếu bạn có proxy riêng hãy dán vào file proxy.txt
-
-Nếu file start hiện tb window bấm more info rồi bấm run away
